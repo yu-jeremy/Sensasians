@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+    <script>document.body.className += 'faded'</script>
+	<!-- things to think about 
+		1. Color Palette
+		2. Website design - use bootstrap...or Materialize?
+			- http://materializecss.com/getting-started.html
+		3. user feedback
+	-->
+	
+    <nav class="navbar navbar-right sticky-top navbar-expand-lg navbar-dark bg-dark" >
+        <a class="navbar-brand" href="http://sensasians.wustl.edu">
+        <img src="assets/panda_.png" width="50" height="50" alt="Sensasians logo"></a>
+        <button class="btn btn-light btn-lg" id="backToRoster" type="button">Meet More Members</button>   
+        
+        <div class="collapse navbar-collapse" id="navbarText"></div>
+            <ul class="navbar-nav ml-auto nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">News</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="members.html">Our Members</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container undernav roster text-center" style="margin-bottom: 5">
+        <h1 class="display-5">Our Current Members: <strong style="color: white;">Meet the Singing Pandas</strong></h1>
+        <div class="row lowest_container undernav">
+            <div class="col ">
+                <div class="card-deck">
+                    <div type="button" class="card border-0 member_box" id="annieBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Annie.jpg" alt="Annie">
+                    </div>
+                    <div type="button" class="card border-0 member_box" id="dianaBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Diana.jpg" alt="Diana">       
+                    </div>
+                    <div type="button" class="card border-0 member_box" id="jeffBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Jeff.jpg" alt="Jeff">
+                    </div>
+                </div>
+                <div class="card-deck lower_container">
+                    <div type="button" class="card border-0 member_box" id="kennyBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Kenny.jpg" alt="Kenny">
+                    </div>
+                    <div type="button" class="card border-0 member_box" id="ryanBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Ryan.JPG" alt="Ryan">
+                    </div>
+                    <div type="button" class="card border-0 member_box" id="qianBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Qian.jpg" alt="Qian">
+                    </div>
+                </div>
+                <div class="card-deck lower_container">
+                    <div type="button" class="card border-0 member_box" id="natBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Nat.jpg" alt="Nat">
+                    </div>
+                    <div type="button" class="card border-0 member_box" id="milesBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Miles3.jpg" alt="Miles">
+                    </div>
+                    <div type="button" class="card border-0 member_box" id="mackBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Mackenzie2.jpg" alt="Mackenzie">      
+                    </div>
+                </div>
+                <div class="card-deck lower_container">
+                    <div type="button" class="card border-0 member_box" id="jeremyBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Jeremy3.jpg" alt="Jeremy">
+                    </div>
+                    <div type="button" class="card border-0 member_box" id="nickBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Nick.jpg" alt="Nick">
+                    </div>
+                    <div type="button" class="card border-0 member_box" id="lukeBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Luke.jpg" alt="Luke">
+                    </div>
+                </div>
+                <div class="card-deck lowest_container">
+                    <div type="button" class="card border-0 member_box" id="teriBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare> 
+                        <img class="rounded card-img img-fluid member_img" src="assets/Teri.jpg" alt="Teri">
+                    </div>
+                    <div type="button" class="card border-0 member_box" id="staceyBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Stacey.jpg" alt="Stacey">
+                    </div>
+                    <div type="button" class="card border-0 member_box" id="meganBox" data-tilt data-tilt-scale="0.96" data-tilt-reverse="true" data-tilt-glare>
+                        <img class="rounded card-img img-fluid member_img" src="assets/Megan.jpg" alt="Megan">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card memberCard" id="natProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Nat.jpg" alt="Nat">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Natalie Thomas</strong></h2>
+                <h4><strong>Class of 2021</strong></h4>
+                <h4><strong>Voice Part: </strong>Alto</h4>
+                <h4><strong>Position: </strong>Treasurer</h4>
+                <h4><strong>Fun Fact: </strong></h4>
+                <p class="lead lower_container">
+                    
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card memberCard" id="lukeProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Luke.jpg" alt="Luke">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Luke Kwong</strong></h2>
+                <h4><strong>Class of 2021</strong></h4>
+                <h4><strong>Voice Part: </strong>Tenor</h4>
+                <h4><strong>Position: </strong>Concert Coordinator</h4>
+                <h4><strong>Fun Fact: </strong>I love washing dishes!</h4>
+                <p class="lead lower_container">
+                    Luke is a freshman who came to WashU not realizing that ICCAs were indeed a real thing. 
+                    If you don't know what ICCAs are, join a cappella and you will most likely find out. Luke 
+                    is studying economics at WashU. If he's not studying, Luke can be found randomly singing 
+                    soprano parts, running in Forest Park, writing random stories he's been off and on again about 
+                    finishing, or talking about Christ. As a native Californian, Luke will readily talk about traffic, 
+                    good weather, environmental law, health crazes, and artisan coffee.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="teriProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Teri.jpg" alt="Teri">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Teri Park</strong></h2>
+                <h4><strong>Class of 2021</strong></h4>
+                <h4><strong>Voice Part: </strong>Alto</h4>
+                <h4><strong>Position: </strong>Co-Music Director</h4>
+                <h4><strong>Fun Fact: </strong></h4>
+                <p class="lead lower_container">
+                    <!-- bio goes here -->
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="ryanProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Ryan.jpg" alt="Ryan">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Ryan Farhat</strong></h2>
+                <h4><strong>Class of 2019</strong></h4>
+                <h4><strong>Voice Part: </strong>Bass/Vocal Percussion</h4>
+                <h4><strong>Position: </strong>RA</h4>
+                <h4><strong>Fun Fact: </strong></h4>
+                <p class="lead lower_container">
+                    <!-- bio goes here -->
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="qianProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Qian.jpg" alt="Qian">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Qianyi Huang</strong></h2>
+                <h4><strong>Class of 2020</strong></h4>
+                <h4><strong>Voice Part: </strong>Soprano</h4>
+                <h4><strong>Position: Co-Design Chair</strong></h4>
+                <h4><strong>Fun Fact: </strong></h4>
+                <p class="lead lower_container">
+                    <!-- bio goes here -->
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="mackProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Mackenzie2.jpg" alt="Mackenzie">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Mackenzie Cappelle</strong></h2>
+                <h4><strong>Class of 2020</strong></h4>
+                <h4><strong>Voice Part: </strong>Mezzo</h4>
+                <h4><strong>Position: </strong>PR Chair, Co-Choreo Chair</h4>
+                <h4><strong>Fun Fact: </strong>I am a Kpop fanatic and a fan fiction lover!</h4>
+                <p class="lead lower_container">
+                    Hailing from Cleveland, Ohio, Mackenzie is a junior studying Global Health and Environment. 
+                    She loves reading, photography, and telling lame jokes. A typical Friday night for this Sensasian 
+                    usually involves tea, anime, and fan fiction....with a dash of korean indie music for good measure. 
+                    (Music pun)
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="meganProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Megan.jpg" alt="Megan">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Megan Lafferty</strong></h2>
+                <h4><strong>Class of 2020</strong></h4>
+                <h4><strong>Voice Part: </strong>Alto</h4>
+                <h4><strong>Position(s): </strong>Co-Choreo Chair, Co-Morale Chair</h4>
+                <h4><strong>Fun Fact: </strong></h4>
+                <p class="lead lower_container">
+                    <!-- bio goes here -->
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="jeffProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Jeff.jpg" alt="Jeff">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Jeff Chen</strong></h2>
+                <h4><strong>Class of 2019</strong></h4>
+                <h4><strong>Voice Part: </strong>Bass, Vocal Percussion</h4>
+                <h4><strong>Position: </strong>Soprano</h4>
+                <h4><strong>Fun Fact: </strong></h4>
+                <p class="lead lower_container">
+                    <!-- bio goes here -->
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="dianaProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Diana.jpg" alt="Diana">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Diana Lee</strong></h2>
+                <h4><strong>Class of 2021</strong></h4>
+                <h4><strong>Voice Part: </strong>Mezzo</h4>
+                <h4><strong>Position: </strong>Co-Design Chair</h4>
+                <h4><strong>Fun Fact: </strong></h4>
+                <p class="lead lower_container">
+                    <!-- bio goes here -->
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="annieProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Annie.jpg" alt="Annie">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Annie Sha</strong></h2>
+                <h4><strong>Class of 2019</strong></h4>
+                <h4><strong>Voice Part: </strong>Soprano</h4>
+                <h4><strong>Position: </strong>Auditions Chair, Fundraising Chair</h4>
+                <h4><strong>Fun Fact: </strong>I have extra teeth above my regular teeth that never came out.</h4>
+                <p class="lead lower_container">
+                    Annie grew up in Vancouver, Canada and is now a Junior majoring in biology with a minor in psychology at WashU. 
+                    In her free time, Annie enjoys singing, cooking, talking to friends, and playing board games. 
+                    An avid skier, Annie misses her home the most for its slopes and of course, her dog.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="nickProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Nick.jpg" alt="Nick">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Nick Armanino</strong></h2>
+                <h4><strong>Class of 2021</strong></h4>
+                <h4><strong>Voice Part: </strong>Baritone</h4>
+                <h4><strong>Position: </strong>Resident Joy</h4>
+                <h4><strong>Fun Fact: </strong>I am very good at imitating accents - but only if I’m speaking the actual language!</h4>
+                <p class="lead lower_container">
+                    During the First Sensasians concert of 2017-18, which was themed after the Disney movie “Inside Out”, Nick was 
+                    quickly dubbed the group’s “resident Joy”, which if you know Nick shouldn’t come as a surprise. Energetic, cheerful, 
+                    and never without a smile, this Northern California native is always happy to be singing with the Sensasians, 
+                    whether it’s on stage or during a group outing. He’s currently a Mechanical Engineering major, but he’s passionate 
+                    about everything from space exploration to literature to Japanese manga and anime. If you see him on campus, be sure
+                     to strike up a conversation: he’s more than happy to talk about anything, anytime, anywhere!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="meredithProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Meredith.jpg" alt="Meredith">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Meredith Liu</strong></h2>
+                <h4><strong>Class of 2020</strong></h4>
+                <h4><strong>Voice Part: </strong>Soprano</h4>
+                <h4><strong>Position: </strong>Co-Music Director</h4>
+                <h4><strong>Fun Fact: </strong>I'm double-jointed in all my fingers!</h4>
+                <p class="lead lower_container">
+                    Meredith is a sophomore from East Greenwich, Rhode Island, majoring in fashion design with a minor in music. 
+                    When she's not doodling in the margins of her notebooks or working in the Sam Fox studios, she's hiding out 
+                    in the piano practice rooms for some music therapy, or working on Kairos, a WashU publication of religious discourse. 
+                    She loves making music with people and is so excited to be a new member of the Sensasians family! 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="kennyProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Kenny.jpg" alt="Kenny">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Kenny</strong></h2>
+                <h4><strong>Class of 2020</strong></h4>
+                <h4><strong>Voice Part: </strong>Vocal Percussion, Baritone</h4>
+                <h4><strong>Position(s): </strong>Alumni Relations Chair, Co-Morale Chair</h4>
+                <h4><strong>Fun Fact: </strong>I have a mix of New York, North Carolinian, and British accent.</h4>
+                <p class="lead lower_container">
+                        Back from his military service in Korea, he’s no freshman anymore,<br>
+                        But what to study or do, he still remains unsure.<br>
+                        With the problem of social inequality that he could not ignore,<br>
+                        The look of fatigue he always wore.<br>
+                        One may ask him, “Would you like to leave, like you did before?”<br>
+                        But says this Super Sophomore, “Nevermore!”                   
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="milesProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Miles3.jpg" alt="Miles">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Miles Woodhull</strong></h2>
+                <h4><strong>Class of 2018</strong></h4>
+                <h4><strong>Voice Part: </strong>Tenor</h4>
+                <h4><strong>Position: </strong>Mom</h4>
+                <h4><strong>Fun Fact: </strong>Tennessee Volunteers 4 Lyfe (not a fact)</h4>
+                <p class="lead lower_container">
+                    Originally from Knoxville, Tennessee, Miles is a senior studying Economics with minors in Mathematics and Music. 
+                    When he's not arranging music for Sensasians, he likes to...well, he pretty much spends all his free time arranging music for Sensasians. 
+                    Miles loves intense one-on-one conversations, in which you can choose one of the five following conversation topics: education inequity 
+                    and social reproduction of the American school system, reasons why Year 3000 by the Jonas Brothers should be the national anthem of the 
+                    United States, reasons why Naruto is the greatest anime character of all time, Washington University Residential Life policy and procedures, 
+                    and Christian eschatology. When Miles graduates, he will be teaching middle school math in Houston, Texas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="jeremyProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Jeremy3.jpg" alt="Jeremy">
+            </div>
+            <div class="col">
+                <h2 class="card-title display-3"><strong>Jeremy Yu</strong></h2>
+                <h4><strong>Class of 2020</strong></h4>
+                <h4><strong>Voice Part: </strong>Baritone</h4>
+                <h4><strong>Position: </strong>Webmaster</h4>
+                <h4><strong>Fun Fact: </strong></h4>
+                <p class="lead lower_container">
+                    Originally from Quincy, Massachusetts, Jeremy is a sophomore studying computer science and sociology at WashU. Right now, 
+                    his favorite songs include <i>This Isn't The End (Owl City)</i>, <i>Only King Forever (Elevation Worship)</i>, and <i>
+                    I'll Find You (Lecrae, Tori Kelly). </i> In his free time, he likes to maintain this website, study sports, and 
+                    talk about God. If you come to a Sensasians concert, you might miss him because he's short and always in the back 
+                    row! He loves spending time with his sister, family, and girlfriend so comfort him whenever you can because he 
+                    misses them a lot now that he's in St. Louis. 
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card memberCard" id="staceyProfile">
+        <div class="card-body row align-items-center">
+            <div class="col">
+                <img class="img-fluid float-left" src="assets/Stacey.jpg" alt="Stacey">
+        </div>
+        <div class="col">
+            <h2 class="card-title display-3"><strong>Stacey Harimoto</strong></h2>
+            <h3><strong>Class of 2019</strong></h3>
+            <h3><strong>Voice Part: </strong>Alto/Mezzo</h3>
+            <h3><strong>Position: </strong>Group Coordinator, Dad</h3>
+            <h3><strong>Fun Fact: </strong>My favorite power tool is the jigsaw!</h3>
+            <p class="lead lower_container">
+                Originally from a suburb north of Detroit, Stacey is a junior studying systems engineering with a minor in 
+                robotics at WashU. In her free time, she likes to pretend she can be organized, listen to music, play with 
+                power tools, snack, and drink tea. You can often find Stacey hiding at home with a friend or two while drinking 
+                tea and talking, or trapped in a black box below the village. She loves spending time with her younger brother, 
+                family, and friends and getting to hear everyone's stories!   
+            </p>
+        </div>
+        </div>
+    </div>
+
+    <div class="footer bg-light text-center lower_container">
+        <span class="lower_container lead" id="social_info"></span><br>
+        <span class="footer_container">
+            <a class="social_link col" href="https://www.youtube.com/user/SensasianWashU">
+                <img class="social_img" id="youtube_link" src="assets/custom_icons/png/001-youtube-symbol.png" alt="Sensasians on Youtube">
+            </a>
+            <a class="social_link col" href="https://www.facebook.com/thesensasians/">
+                <img class="social_img" id="fb_link" src="assets/custom_icons/png/002-facebook-logo.png" alt="Sensasians on Facebook">
+            </a>
+            <a class="social_link col" href="https://open.spotify.com/artist/0c0OgLlunq7sNYsu4RdD8e">
+                <img class="social_img" id="spotify_link" src="assets/custom_icons/png/003-spotify.png" alt="Sensasians on Spotify">
+            </a>
+            <a class="social_link col" href="https://www.instagram.com/washusensasians/?hl=en">
+                <img class="social_img" id="insta_link" src="assets/custom_icons/png/004-instagram-logo.png" alt="Sensasians on Instagram">
+            </a>   
+        </span>
+
+        <p class="text-muted lower_container">
+            <span> 
+                <small class="text-muted"><a href="mailto:asiacappella@gmail.com">Contact Us</a> |</small>
+                <small class="text-muted"><a href="about.html">FAQ</a></small><br>
+            </span>
+            <small>Site design by 
+                <a id="designer" href="https://github.com/yu-jeremy/Sensasians">Jeremy Yu</a>
+            </small><br>
+            <small>Icons made by Freepik from www.flaticon.com</small>
+        </p>
+    </div>
+</body>
+</html>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="scripts/vanilla-tilt.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
