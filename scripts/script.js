@@ -16,7 +16,6 @@ $(window).scroll(function(){
 
 $(window).scroll(function() {
     var element = document.getElementById("nav");
-    var logo = document.getElementById("banner");
     // from Stack Overflow 
     // https://stackoverflow.com/questions/4326845/how-can-i-determine-the-direction-of-a-jquery-scroll-event
     var thisScrollTop = $(document).scrollTop();
