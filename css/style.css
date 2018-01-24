@@ -12,6 +12,7 @@ body {
     margin-bottom: 300px;
     opacity: 1;
     transition: 1s opacity;
+    background-image: url("assets/group_photos/chicago.jpeg");
 }
 
 p {
@@ -56,7 +57,6 @@ div {
     width: 101%;
     height: 300px; /* Set the fixed height of the footer here */
     line-height: 25px; /* Vertically center the text there */
-    
 }
 
 .social_img {
@@ -96,15 +96,23 @@ body.faded {
     -webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    z-index: 1;
+    background-color: transparent;
 }
 
-#banner {
+.banner {
     opacity: 1;
     -webkit-transition: all 0.5s ease-in-out;
 	-moz-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    z-index: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    -webkit-filter: grayscale(50%); 
+    filter: grayscale(50%);
     
 }
 .scroll_banner {
@@ -116,3 +124,17 @@ body.faded {
     width: 50%;
     height: 50%;
 }
+
+ .banner_overlay {
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    bottom: 200px;
+}
+
+.below_banner {
+    position: relative;
+    left: 0px;
+    top: 850px;
+}
+

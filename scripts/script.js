@@ -10,27 +10,20 @@ $(window).bind("load", function() {
     $('body').removeClass('faded');
  });
  
-$(window).scroll(function(){
-    $("#banner").css("opacity", 1 - $(window).scrollTop() / 500);
-});
+// $(window).scroll(function(){
+//     $(".banner").css("opacity", 1 - $(window).scrollTop() / 300);
+//     $(".banner_overlay").css("opacity", 1 - $(window).scrollTop() / 300);
+// });
 
 $(window).scroll(function() {
     var element = document.getElementById("nav");
     // from Stack Overflow 
     // https://stackoverflow.com/questions/4326845/how-can-i-determine-the-direction-of-a-jquery-scroll-event
     var thisScrollTop = $(document).scrollTop();
-   
-    if (thisScrollTop > document.body.scrollHeight * 0.1){
-        element.classList.remove("bg-dark");
-        element.classList.remove("navbar-dark");
-        element.classList.add("bg-light");
-        element.classList.add("navbar-light");
-
-    } else {
-        element.classList.remove("bg-light");
-        element.classList.remove("navbar-light");
+    if (thisScrollTop > 250){
         element.classList.add("bg-dark");
-        element.classList.add("navbar-dark");
+    } else {
+        element.classList.remove("bg-dark");
     }
 });
 
