@@ -108,8 +108,8 @@ body.faded {
     position: absolute;
     left: 0px;
     top: 0px;
-    -webkit-filter: grayscale(50%); 
-    filter: grayscale(50%);
+    -webkit-filter: grayscale(20%); 
+    filter: grayscale(20%);
     
 }
 .scroll_banner {
