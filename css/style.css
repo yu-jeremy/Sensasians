@@ -30,12 +30,14 @@ div {
 }
 
 .lower_container {
-    margin-top: 35px;
+    position: relative;
+    margin-top: 4%;
 }
 
 .lowest_container {
-    margin-top: 30px;
+    position: relative;
     margin-bottom: 30%;
+    margin-top: 10%;
 }
 
 .members_lowest_container {
@@ -133,5 +135,10 @@ body.faded {
     position: relative;
     left: 0px;
     top: 850px;
+}
+
+.about_banner {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
 }
 

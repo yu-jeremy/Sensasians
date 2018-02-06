@@ -11,8 +11,6 @@ $(window).bind("load", function() {
 
 $(window).scroll(function() {
     var element = document.getElementById("home_nav");
-    // from Stack Overflow 
-    // https://stackoverflow.com/questions/4326845/how-can-i-determine-the-direction-of-a-jquery-scroll-event
     var thisScrollTop = $(document).scrollTop();
     if (thisScrollTop > 100){
         element.classList.add("bg-dark");
