@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Abel|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
 
 html {
     position: relative;
@@ -12,17 +14,45 @@ body {
     transition: 1s opacity;
 }
 
+.changeNavColor {
+  background-color: #22252A !important;
+}
+
+#about_title {
+  font-family: 'Permanent Marker', cursive;
+}
+
+#about_bg {
+  background-color: #22252A !important;
+}
+
+#member_bg {
+  background-color: #22252A !important;
+}
+
+#members_title {
+  font-family: 'Permanent Marker', cursive;
+}
+
+#repertoire_title {
+  font-family: 'Permanent Marker', cursive;
+}
+
+#repertoire_bg {
+  background-color: #22252A !important;
+}
+
 p {
-    font-family: 'Quicksand', sans-serif; 
+    font-family: 'Quicksand', sans-serif;
 }
 
 .nav-link {
-    font-family: 'Quicksand', sans-serif; 
+    font-family: 'Quicksand', sans-serif;
 }
 
 div {
-    font-family: 'Quicksand', sans-serif; 
-   
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .undernav {
@@ -30,19 +60,12 @@ div {
 }
 
 .lower_container {
-    position: relative;
-    margin-top: 4%;
-}
-
-.lowest_container {
-    position: relative;
-    margin-bottom: 30%;
-    margin-top: 10%;
+  margin-top: 4%;
 }
 
 .members_lowest_container {
-    margin-top: 30px;
-    margin-bottom: 12%;
+  margin-top: 30px;
+  margin-bottom: 12%;
 }
 
 .memberCard {
@@ -51,11 +74,17 @@ div {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
-    width: 101%;
-    height: 300px; /* Set the fixed height of the footer here */
-    line-height: 25px; /* Vertically center the text there */
+  z-index: 0;
+  position: absolute;
+  bottom: 0 !important;
+  width: 100%;
+  height: 250px; /* Set the fixed height of the footer here */
+  line-height: 15px; /* Vertically center the text there */
+}
+
+.container {
+  display: block;
+  margin: 10%;
 }
 
 .social_img {
@@ -67,7 +96,7 @@ div {
 
 .social_img:hover {
     transform: scale(1.1,1.1);
-    
+
 }
 
 .social_link:link {
@@ -91,54 +120,46 @@ body.faded {
     transition: none;
 }
 
-#nav {
-    -webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    z-index: 1;
-    background-color: transparent;
+.nav {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+  background-color: transparent;
 }
 
 .banner {
-    opacity: 1;
-    -webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-    z-index: 0;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    -webkit-filter: grayscale(20%); 
-    filter: grayscale(20%);
-    
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+
 }
 .scroll_banner {
-    width: 20%;
-    height: 20%;
+  width: 20%;
+  height: 20%;
 }
 
 .unscroll_banner {
-    width: 50%;
-    height: 50%;
+  width: 50%;
+  height: 50%;
 }
 
  .banner_overlay {
-    position: absolute;
-    z-index: 1;
-    left: 0px;
-    bottom: 200px;
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  bottom: 200px;
 }
 
 .below_banner {
-    position: relative;
-    left: 0px;
-    top: 850px;
+  position: relative;
+  left: 0px;
+  top: 850px;
 }
-
-.about_banner {
-    -webkit-filter: grayscale(90%);
-    filter: grayscale(90%);
-}
-

@@ -7,14 +7,15 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
         <link rel="icon" href="assets/panda_.png">
+        <title>Sensasians: Our Music</title>
     </head>
 
-    <body>
+    <body id="repertoire_bg">
         <script>document.body.classList += 'faded'</script>
-        <nav id="nav" class="navbar navbar-right sticky-top navbar-expand-lg navbar-dark bg-dark" >
+        <nav class="navbar navbar-right sticky-top navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="http://sensasians.wustl.edu">
             <img src="assets/panda_.png" width="50" height="50" alt="Sensasians logo"></a>
-            
+
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ml-auto nav-fill">
                     <li class="nav-item">
@@ -23,25 +24,26 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="news.html">News</a>
-                    </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="repertoire.html">Repertoire</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="members.html">Our Members</a>
                     </li>
-                    
+
                 </ul>
             </div>
         </nav>
-        <div class="lower_container container text-center">
-            <h1 class="display-3">Our Music: <span style="color: white;">Past and Present</span></h1>
+
+        <div class="text-center" style="position: relative; top: 0;">
+          <img style="width: 100%;" src="assets/group_photos/brother2edited.png">
         </div>
-        <div class="lower_container container-fluid">
-            <table class="table table-hover table-bordered text-center table-inverse">
-                <thead class="bg-dark text-white">
+        <div id="repertoire_title" class="lower_container container text-center" style="position: absolute; top: 0; left: 12.5%;">
+            <h1 class="display-1"><span style="color: white;"><strong>Our Music</strong></span></h1>
+        </div>
+        <div class="lower_container container-fluid" style="position: relative;">
+            <table class="table table-hover table-bordered text-center table-inverse table-dark">
+                <thead class="text-white">
                     <tr>
                         <th scope="col">Song</th>
                         <th scope="col">Arranged By</th>
@@ -50,7 +52,35 @@
                         <th scope="col">Status</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="text-dark" style="background-color: #E2D2F7;">
+                    <tr>
+                        <th scope="row">Many Miles of Mirrors Overboard is Our Song</th>
+                        <td>Megan Bacani, Kenny Hong</td>
+                        <td>Sara Bareilles, JT, JB, Camp Rock</td>
+                        <td>Miles Woodhull</td>
+                        <td>Current</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Ikanaide</th>
+                        <td>Qian Huang</td>
+                        <td>Tamaki Koji</td>
+                        <td>Teri Park</td>
+                        <td>Current</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I Want You/Blackout</th>
+                        <td>Kenny Hong</td>
+                        <td>Marian Hill</td>
+                        <td>Natalie Thomas</td>
+                        <td>Current</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Finesse</th>
+                        <td>Miles Woodhull</td>
+                        <td>Bruno Mars </td>
+                        <td>Ryan Farhat, Luke Kwong, Diana Lee</td>
+                        <td>Current</td>
+                    </tr>
                     <tr>
                         <th scope="row">I Wouldn't Be</th>
                         <td>Ryan Farhat-Sabet</td>
@@ -156,15 +186,15 @@
                         <td>Miles Woodhull</td>
                         <td>Retired (sort've)</td>
                     </tr>
-                    
+
                 </tbody>
-    
+
             </table>
         </div>
-      
-        
 
-        
+
+
+
     </body>
 
 

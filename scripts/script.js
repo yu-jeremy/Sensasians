@@ -7,15 +7,15 @@ $(function() {
 $(window).bind("load", function() {
     $('body').removeClass('faded');
  });
- 
+
 
 $(window).scroll(function() {
-    var element = document.getElementById("home_nav");
+    var element = document.getElementsByClassName("nav");
     var thisScrollTop = $(document).scrollTop();
-    if (thisScrollTop > 100){
-        element.classList.add("bg-dark");
+    if (thisScrollTop > 100) {
+      $('.nav').addClass('changeNavColor')
     } else {
-        element.classList.remove("bg-dark");
+      $('.nav').removeClass('changeNavColor')
     }
 });
 
@@ -24,6 +24,7 @@ $(".member_box").click(function() {
     $(".roster").hide();
     $(".footer").hide();
     $("#backToRoster").show();
+    $(".banner").hide();
     var thisID = $(this).attr("id");
     if (thisID == "annieBox") {
         $("#annieProfile").show();
@@ -65,11 +66,7 @@ $(".member_box").click(function() {
 $("#backToRoster").click(function() {
     $(".roster").show();
     $(".footer").show();
+    $(".banner").show();
     $(".memberCard").hide();
     $("#backToRoster").hide();
 });
-
-
-
-
-
