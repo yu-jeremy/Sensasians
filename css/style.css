@@ -172,3 +172,11 @@ body.faded {
   left: 0px;
   top: 850px;
 }
+
+#featured {
+  top: 5%;
+}
+
+body .modal-admin {
+  width: 1500px;
+}

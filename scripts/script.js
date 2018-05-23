@@ -1,10 +1,12 @@
 $(function() {
     // hide all member profiles on load
+   
     $(".memberCard").hide();
     $("#backToRoster").hide();
 });
 
 $(window).bind("load", function() {
+    $("#featured").modal();
     $('body').removeClass('faded');
  });
 
