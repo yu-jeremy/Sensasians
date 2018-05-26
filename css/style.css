@@ -174,9 +174,23 @@ body.faded {
 }
 
 #featured {
-  top: 5%;
+  top: 10%;
 }
 
-body .modal-admin {
-  width: 1500px;
+#promo_msg {
+  font-size: 2.9em;
+}
+
+.album-btn {
+  background-color: #D6ADFB;
+}
+
+.album-btn:hover {
+  background-color: #CAADFB;
+}
+
+#promo_close_btn {
+  position: relative;
+  top: -10%;
+  right: 1%;
 }

@@ -31,17 +31,23 @@
 			</ul>
 		</div>
 	</nav>
-	
-	<div id="featured" class="modal fade container-fluid" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-admin modal-lg row" role="document" style="width: 1500px;">
-			<div class="col-9">
-				<img src="assets/albumcoverfinal2.jpg" width="110%" alt="New Album Cover">
-			</div>
-			<div class="col-3 text-white bg-dark">
-				<button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				<h1>Coming soon to all of your favorite streaming platforms!</h1>
+	<div id="featured" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content bg-dark">
+				<div class="row modal-body">
+					<div class="col-8">
+						<img src="assets/albumcoverfinal2.jpg" width="105%" size="105%" alt="New Album Cover">
+					</div>
+					<div class="col-4 text-center">
+						<button id="promo_close_btn" type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+						<p id="promo_msg" class="text-white text-right">Coming soon to your favorite streaming platform...</p>
+						<a class="btn album-btn text-white btn-block" href="https://open.spotify.com/album/7xka91RHelGobziKd22r06">On Spotify</a>
+						<a class="btn album-btn text-white btn-block" href="https://itunes.apple.com/us/album/21st-sentury-single/1388408823">On iTunes</a>
+						
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
