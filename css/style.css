@@ -178,7 +178,8 @@ body.faded {
 }
 
 #promo_msg {
-  font-size: 2.9em;
+  font-size: 2.75em;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .album-btn {
@@ -194,3 +195,9 @@ body.faded {
   top: -10%;
   right: 1%;
 }
+
+#news_title {
+  font-family: 'Permanent Marker', cursive;
+}
+
+
