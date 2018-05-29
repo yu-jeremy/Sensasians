@@ -199,5 +199,12 @@ body.faded {
 #news_title {
   font-family: 'Permanent Marker', cursive;
 }
+ 
+.logo {
+  transition: transform 2s;
+}
 
+.logo:hover {
+  transform: rotateY(360deg);
+}
 
