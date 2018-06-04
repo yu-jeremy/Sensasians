@@ -31,6 +31,10 @@ body {
   background-color: #22252A !important;
 }
 
+#news_bg {
+  background-color: #22252A !important;
+}
+
 #members_title {
   font-family: 'Permanent Marker', cursive;
 }
@@ -178,16 +182,18 @@ body.faded {
 }
 
 #promo_msg {
-  font-size: 2.75em;
+  font-size: 2.50em;
   font-family: 'Quicksand', sans-serif;
 }
 
 .album-btn {
-  background-color: #D6ADFB;
+  background-color: rgb(225, 206, 241);
+  color: black;
 }
 
 .album-btn:hover {
-  background-color: #CAADFB;
+  background-color: rgb(220, 180, 241);
+  color: white;
 }
 
 #promo_close_btn {
@@ -208,3 +214,6 @@ body.faded {
   transform: rotateY(360deg);
 }
 
+#album_news {
+  background-color: #22252A !important;
+}
