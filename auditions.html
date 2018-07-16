@@ -4,11 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 	<link rel="stylesheet" href="css/style.css">
-	<title>The WashU Sensasians</title>
+	<title>Sensasians Auditions</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	<link rel="icon" href="assets/panda.png">
 </head>
-<body>
+<body id="auditions_bg">
 	<script>document.body.className += 'faded'</script>
 	<nav class="nav navbar navbar-right sticky-top navbar-expand-lg navbar-dark">
 		<a class="navbar-brand" href="index.html">
@@ -16,7 +16,7 @@
 
 		<div class="collapse navbar-collapse" id="navbarText">
 			<ul class="navbar-nav ml-auto nav-fill">
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="index.html">Home</a>
 				</li>
 				<li class="nav-item">
@@ -28,7 +28,7 @@
 				<li class="nav-item">
 					<a class="nav-link" href="news.html">News</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item active">
 					<a class="nav-link" href="auditions.html">Auditions</a>
 				</li>
 				<li class="nav-item">
@@ -37,33 +37,17 @@
 			</ul>
 		</div>
 	</nav>
-	<div id="featured" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content bg-dark">
-				<div class="row modal-body">
-					<div class="col-8">
-						<img src="assets/albumcoverfinal2.jpg" width="100%" height="100%" alt="New Album Cover">
-					</div>
-					<div class="col-4 text-center">
-						<button id="promo_close_btn" type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-						<p id="promo_msg" class="text-white text-center">Listen to our album on your favorite streaming platform!</p>
-						<a class="btn btn-lg album-btn btn-block" href="https://open.spotify.com/album/7xka91RHelGobziKd22r06">Spotify</a>
-						<a class="btn btn-lg album-btn btn-block" href="https://itunes.apple.com/us/album/21st-sentury-single/1388408823">iTunes</a>
-						<a class="btn btn-lg album-btn btn-block" href="https://play.google.com/store/music/album/Washington_University_Sensasians_21st_Sentury?id=Bheqndogd4se5m5wikyngxlifby&hl=en">Google Play</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="bg-dark text-center">
-		<div class="text-center">
-			<img class="banner" src="assets/group_photos/icca2018end01.svg" alt="Front page" style="max-width: 100%;">
-		</div>
-	</div>
-	<div class="container-fluid footer text-center below_banner">
-		<span class="lower_container lead" id="social_info"></span><br>
+
+	<div id="news_title" class="lower_container container text-center" style="position: absolute; top: 0; left: 12.5%;">
+        <h1 class="display-1"><span style="color: white;"><strong>Sing with us!</strong></span></h1>
+    </div>
+
+	    <!-- Calendly inline widget begin -->
+	<div class="calendly-inline-widget" data-url="https://calendly.com/thewashusensasians/fl18auditions" style="min-width:320px;height:580px;"></div>
+	<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
+	<!-- Calendly inline widget end -->
+
+	<div class="container-fluid footer text-center">
 		<span class="footer_container row text-center">
 			<a class="social_link col-2" href="https://www.youtube.com/user/SensasianWashU">
 				<img class="social_img" id="youtube_link" src="assets/custom_icons/png/iconmonstr-youtube.png" alt="Sensasians on Youtube">
@@ -85,7 +69,8 @@
 			</a>
 		</span>
 	</div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 	<script src="scripts/script.js"></script>
