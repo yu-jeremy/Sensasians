@@ -229,3 +229,25 @@ body.faded {
   -webkit-filter: invert(1);
   filter: invert(1);
 }
+
+#auditions_container {
+  position: absolute;
+  top: 38%;
+}
+
+#auditions_container #auditions_btn {
+  background-color: #22252A !important;
+  color: white;
+}
+
+#auditions_container #auditions_btn:hover {
+  color: #D6ADFB !important;
+  -ms-transform: scale(1.01); /* IE 9 */
+  -webkit-transform: scale(1.01); /* Safari */
+  transform: scale(1.01);
+}
+
+#auditions_container .btn-lg {
+  font-size: 45px;
+  padding: 20px 20px;
+}

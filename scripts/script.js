@@ -3,6 +3,7 @@ $(function() {
    
     $(".memberCard").hide();
     $("#backToRoster").hide();
+    $("#auditions_page").hide();
 });
 
 $(window).bind("load", function() {
@@ -10,6 +11,15 @@ $(window).bind("load", function() {
     $('body').removeClass('faded');
  });
 
+$("#auditions_btn").click(function() {
+
+    if ($("#auditions_page").is(":visible")) {
+        $("#auditions_page").hide();
+    } else {
+        $("#auditions_page").show();
+    }
+   
+});
 
 $(window).scroll(function() {
     var element = document.getElementsByClassName("nav");
