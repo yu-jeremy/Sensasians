@@ -21,7 +21,11 @@ $("#auditions_btn").click(function() {
         $("#auditions_page").show();
         $("#exit_auditions_btn").show();
     }
-   
+});
+
+$("#exit_auditions_btn").click(function() {
+    $("#auditions_page").hide();
+    $("#exit_auditions_btn").hide();
 });
 
 $(window).scroll(function() {
