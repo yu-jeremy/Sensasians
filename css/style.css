@@ -230,6 +230,10 @@ body.faded {
   filter: invert(1);
 }
 
+#auditions_page {
+  z-index: 1;
+}
+
 #auditions_container {
   position: absolute;
   top: 38%;

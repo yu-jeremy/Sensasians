@@ -4,6 +4,7 @@ $(function() {
     $(".memberCard").hide();
     $("#backToRoster").hide();
     $("#auditions_page").hide();
+    $("#exit_auditions_btn").hide();
 });
 
 $(window).bind("load", function() {
@@ -15,8 +16,10 @@ $("#auditions_btn").click(function() {
 
     if ($("#auditions_page").is(":visible")) {
         $("#auditions_page").hide();
+        $("#exit_auditions_btn").hide();
     } else {
         $("#auditions_page").show();
+        $("#exit_auditions_btn").show();
     }
    
 });
