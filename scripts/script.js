@@ -12,22 +12,6 @@ $(window).bind("load", function() {
     $('body').removeClass('faded');
  });
 
-$("#auditions_btn").click(function() {
-
-    if ($("#auditions_page").is(":visible")) {
-        $("#auditions_page").hide();
-        $("#exit_auditions_btn").hide();
-    } else {
-        $("#auditions_page").show();
-        $("#exit_auditions_btn").show();
-    }
-});
-
-$("#exit_auditions_btn").click(function() {
-    $("#auditions_page").hide();
-    $("#exit_auditions_btn").hide();
-});
-
 $(window).scroll(function() {
     var element = document.getElementsByClassName("nav");
     var thisScrollTop = $(document).scrollTop();

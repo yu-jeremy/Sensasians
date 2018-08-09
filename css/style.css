@@ -235,13 +235,7 @@ body.faded {
 
 #auditions_page {
   z-index: 1;
-}
-
-#exit_auditions_btn {
-  z-index: 3;
-  position: absolute;
-  left: 2%;
-  top: 10%;
+  border: 0;
 }
 
 #auditions_container {
@@ -255,11 +249,16 @@ body.faded {
   color: white;
 }
 
-#auditions_container #auditions_btn:hover {
+#auditions_container #auditions_btn a {
+  color: white;
+}
+
+#auditions_container #auditions_btn a:hover {
   color: #D6ADFB !important;
   -ms-transform: scale(1.01); /* IE 9 */
   -webkit-transform: scale(1.01); /* Safari */
   transform: scale(1.01);
+  text-decoration: none;
 }
 
 #auditions_container .btn-lg {
@@ -274,4 +273,18 @@ body.faded {
 #auditions_questions {
   position: relative;
   top: 32.5em;
+}
+
+#contact_num {
+  color: #D6ADFB !important;
+}
+
+a.email {
+  color: white;
+  font-weight: bold;
+}
+
+a.email:hover {
+  color: #D6ADFB;
+  text-decoration: none;
 }
