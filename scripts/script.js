@@ -8,7 +8,7 @@ $(function() {
 });
 
 $(window).bind("load", function() {
-    $("#featured").modal();
+    // $("#featured").modal();
     $('body').removeClass('faded');
  });
 
