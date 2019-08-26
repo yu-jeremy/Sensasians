@@ -272,7 +272,7 @@ body.faded {
 
 #auditions_questions {
   position: relative;
-  top: 32.5em;
+  top: 45em;
 }
 
 #contact_num {
@@ -286,4 +286,9 @@ a.email {
 a.email:hover {
   color: #D6ADFB;
   text-decoration: none;
+}
+
+#arrival-note {
+  background-color: white;
+  padding: 1.5%;
 }
