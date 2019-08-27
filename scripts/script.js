@@ -23,7 +23,7 @@ $(window).scroll(function() {
 });
 
 // open member profiles
-$(".member_box").click(function() {
+/* $(".member_box").click(function() {
     $(".roster").hide();
     $(".footer").hide();
     $("#backToRoster").show();
@@ -73,3 +73,5 @@ $("#backToRoster").click(function() {
     $(".memberCard").hide();
     $("#backToRoster").hide();
 });
+
+*/
