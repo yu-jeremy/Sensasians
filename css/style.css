@@ -298,3 +298,10 @@ a.email:hover {
   padding: 1.5%;
   border-radius: 10px;
 }
+
+#about-info {
+  position: relative;
+  margin-top: 50%;
+  width: 96%;
+  font-size: 1.25em;
+}
