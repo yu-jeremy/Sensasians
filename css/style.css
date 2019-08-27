@@ -68,7 +68,8 @@ div {
 }
 
 .lower_container {
-  margin-top: 4%;
+  position: relative;
+  top: 40em;
 }
 
 .members_lowest_container {
@@ -84,7 +85,6 @@ div {
 .footer {
   background-color: #22252A !important;
   z-index: 0;
-  position: absolute;
   bottom: 0 !important;
   width: 100%;
   height: 5%; /* Set the fixed height of the footer here */
@@ -272,7 +272,9 @@ body.faded {
 
 #auditions_questions {
   position: relative;
-  top: 45em;
+  top: 30em;
+  font-size: 1.25em;
+  width: 85%;
 }
 
 #contact_num {
@@ -291,4 +293,5 @@ a.email:hover {
 #arrival-note {
   background-color: white;
   padding: 1.5%;
+  border-radius: 10px;
 }
