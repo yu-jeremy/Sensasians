@@ -239,13 +239,13 @@ body.faded {
 }
 
 #auditions_container {
-  position: absolute;
-  top: 23%;
-  left: 0;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 2.5%;
 }
 
 #auditions_container #auditions_btn {
-  background-color: #22252A !important;
+  background-color: #000000 !important;
   color: white;
 }
 
@@ -253,11 +253,14 @@ body.faded {
   color: white;
 }
 
-#auditions_container #auditions_btn a:hover {
+#auditions_container #auditions_btn h1:hover {
   color: #D6ADFB !important;
-  -ms-transform: scale(1.01); /* IE 9 */
-  -webkit-transform: scale(1.01); /* Safari */
-  transform: scale(1.01);
+}
+
+#auditions_container #auditions_btn a:hover {
+  -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari */
+  transform: scale(1.02);
   text-decoration: none;
 }
 
